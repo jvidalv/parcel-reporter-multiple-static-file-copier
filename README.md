@@ -27,6 +27,7 @@ Configuration is set under `staticFilesCopy` in `package.json`.
 | origin  | Example: _node_modules/@package/public_  |
 | destination  | Example: _dist/public_  |
 
+
 ⚠️  You **must add** the plugin name in `.parcelrc` config file:
 
 `.parcelrc`
