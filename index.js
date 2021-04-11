@@ -40,7 +40,11 @@ module.exports = new plugin.Reporter({
         config.forEach(({ origin, destination }) =>
           copyFiles(origin, destination, logger)
         );
-      } catch (_) {}
+      } catch (err) {
+        logger.error({
+          message : `🚨  Error: ${err.message}`
+        })
+      }
     }
   },
 });
