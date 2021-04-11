@@ -1,6 +1,6 @@
 {
   "name": "parcel-reporter-multiple-static-file-copier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Parcel v2 plugin. Enables the copy of multiple static files and folders into the specified folder on build success.",
   "main": "index.js",
   "author": "Josep Vidal <josepvidalvidal@gmail.com>",

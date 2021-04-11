@@ -1,12 +1,12 @@
 # parcel-reporter-multiple-static-file-copier
 
-This is a plugin for [Parcel v2](https://v2.parceljs.org) that **copies multiple specified files and folders into specified folders** once build finishes **successfully** (Event: buildSuccess).  
+This is a plugin for [Parcel v2](https://v2.parceljs.org) that **copies multiple specified files and folders into specified folders** once build finishes **successfully** (Event: buildSuccess).
 
 Inspired by [this plugin](https://github.com/elwin013/parcel-plugin-static-files-copy).
 
 ## Install
 
-Yarn 
+Yarn
 ```bash
 $ yarn add -D parcel-reporter-multiple-static-file-copier
 ```
@@ -18,7 +18,7 @@ $ npm install parcel-reporter-multiple-static-file-copier --save-dev
 
 ## Usage
 
-Configuration is set under `staticFilesCopy` in `package.json`.
+Configuration is set under `multipleStaticFilesCopier` in `package.json`.
 
 `staticFilesCopy` must be an array of objects containing `origin` and `destination` props:
 
@@ -48,7 +48,7 @@ _(Note that both `public` and `dist` are in the project root)_
 `package.json`
 ```json
 {
-  "staticFilesCopy": [
+  "multipleStaticFilesCopier": [
     {
       "origin": "public",
       "destination": "dist/public/"

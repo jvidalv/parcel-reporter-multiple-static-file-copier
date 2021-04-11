@@ -4,11 +4,11 @@ const plugin = require('@parcel/plugin');
 
 const getConfig = (projectRoot, logger) => {
   const config = fse.readJsonSync(path.join(projectRoot, 'package.json'))
-    .staticFilesCopy;
+      .multipleStaticFilesCopier;
 
   if (!config) {
     logger.error({
-      message: '❌  Missing property staticFileCopy in package.json!',
+      message: '❌  Missing property multipleStaticFilesCopier in package.json!',
     });
   }
 
@@ -38,7 +38,7 @@ module.exports = new plugin.Reporter({
       try {
         const config = getConfig(options.projectRoot, logger);
         config.forEach(({ origin, destination }) =>
-          copyFiles(origin, destination, logger)
+            copyFiles(origin, destination, logger)
         );
       } catch (err) {
         logger.error({
