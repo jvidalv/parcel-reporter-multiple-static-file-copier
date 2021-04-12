@@ -18,7 +18,7 @@ $ npm install parcel-reporter-multiple-static-file-copier --save-dev
 
 ## Usage
 
-Configuration is set under `multipleStaticFilesCopier` in `package.json`. It must be an array of objects containing `origin` and `destination` props:
+Configuration is set under `multipleStaticFileCopier` in `package.json`. It must be an array of objects containing `origin` and `destination` props:
 
 | Property  | Path |
 | ------------- | ------------- |
@@ -29,7 +29,6 @@ Configuration is set under `multipleStaticFilesCopier` in `package.json`. It mus
 
 You **⚠️  must extend** Parcel configuration with the plugin name in `.parcelrc`:
 
-`.parcelrc`
 ```json
 {
   "reporters": [
@@ -41,13 +40,13 @@ You **⚠️  must extend** Parcel configuration with the plugin name in `.parce
 _*Note that the "..." notation is used to keep the default report plugins loaded by Parcel._
 
 ## Example
-This example will copy the contents of the folder `public` into the folder `dist/public`.
-_(Note that both `public` and `dist` are in the project root)_
+This example will copy the contents of the folder _public_ into the folder _dist/public_.
+_(Note that both are in the project root)_
 
 `package.json`
 ```json
 {
-  "multipleStaticFilesCopier": [
+  "multipleStaticFileCopier": [
     {
       "origin": "public",
       "destination": "dist/public/"

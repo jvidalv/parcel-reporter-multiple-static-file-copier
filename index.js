@@ -4,17 +4,17 @@ const plugin = require('@parcel/plugin');
 
 const getConfig = (projectRoot, logger) => {
   const config = fse.readJsonSync(path.join(projectRoot, 'package.json'))
-      .multipleStaticFilesCopier;
+      .multipleStaticFileCopier;
 
   if (!config) {
     logger.error({
-      message: '❌  Missing property multipleStaticFilesCopier in package.json!',
+      message: '❌  Missing property multipleStaticFileCopier in package.json!',
     });
   }
 
   if (!Array.isArray(config)) {
     logger.error({
-      message: '❌  Property staticFileCopy in package.json is not an array!',
+      message: '❌  Property multipleStaticFileCopier in package.json is not an array!',
     });
   }
 
