@@ -1,5 +1,5 @@
 # parcel-reporter-multiple-static-file-copier
-[![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/parcel-reporter-multiple-static-file-copier)
+[![npm version](https://img.shields.io/npm/v/parcel-reporter-multiple-static-file-copier.svg?style=flat)](https://www.npmjs.com/package/parcel-reporter-multiple-static-file-copier)
 
 This is a plugin for [Parcel v2](https://v2.parceljs.org) that **copies multiple specified files and folders into specified folders** once build finishes **successfully** (Event: buildSuccess).
 
